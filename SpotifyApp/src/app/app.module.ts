@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import {SearchComponent} from './components/search/search.component';
 import {NavbarComponent} from './components/navbar/navbar.component';
 import {AboutComponent} from './components/about/about.components';
+import {routing} from './app.routing';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {AboutComponent} from './components/about/about.components';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
