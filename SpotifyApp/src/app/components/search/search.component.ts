@@ -9,13 +9,13 @@ import {Artist} from '../../../Artist';
 export class SearchComponent {
     searchStr: string;
     searchRes: Artist[];
-    constructor(private _spotifyService:SpotifyService){
+    constructor(private _spotifyService: SpotifyService){
 
     }
 
     searchMusic(){
         this._spotifyService.searchMusic(this.searchStr).subscribe(res => {
-            console.log(res.artists.items);            
+            console.log(res.artists.items);
             this.searchRes = res.artists.items;
         });
     }
